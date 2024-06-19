@@ -13,6 +13,8 @@
 # -- Craft --
 set pilot_name = Rainbow Dash
 set vtx_low_power_disarm = ON
+set yaw_motors_reversed = ON
+set failsafe_delay = 10
 
 # -- Turn off beeper bs --
 beeper -GYRO_CALIBRATED
@@ -37,6 +39,7 @@ beeper -CRASH_FLIP
 beeper -CAM_CONNECTION_OPEN
 beeper -CAM_CONNECTION_CLOSE
 beeper -RC_SMOOTHING_INIT_FAIL
+beacon RX_LOST
 
 # -- Bindings and modes --
 map TAER1234
@@ -76,5 +79,30 @@ adjrange 0 0 3 900 2100 12 3 0 0
       set osd_canvas_height = 13
    #$ OPTION END
    #$ OPTION BEGIN (UNCHECKED): HDZero OSD
+      set osd_units = IMPERIAL
+      set osd_tim2 = 1
+      set osd_vbat_pos = 14849
+      set osd_link_quality_pos = 15403
+      set osd_rssi_dbm_pos = 15436
+      set osd_tim_1_pos = 393
+      set osd_tim_2_pos = 14863
+      set osd_throttle_pos = 311
+      set osd_vtx_channel_pos = 14401
+      set osd_crosshairs_pos = 14616
+      set osd_current_pos = 15874
+      set osd_mah_drawn_pos = 15883
+      set osd_craft_name_pos = 14383
+      set osd_pilot_name_pos = 14369
+      set osd_altitude_pos = 16417
+      set osd_warnings_pos = 14708
+      set osd_avg_cell_voltage_pos = 14856
+      set osd_battery_usage_pos = 33002
+      set osd_disarmed_pos = 14677
+      set osd_canvas_width = 50
+      set osd_canvas_height = 18
+      set vtx_band = 5
+      set vtx_channel = 1
+      set vtx_power = 1
+      set vtx_freq = 5658
    #$ OPTION END
 #$ OPTION_GROUP END
