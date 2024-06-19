@@ -6305,6 +6305,18 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/other/dash_standard.txt",
+      "hash": "2162a12157afbbe033a9148380368745839f033737a4846e73a2e1bae5c0dc09",
+      "title": "Dash standard features",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "author": "Eric Aschner",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/reset_3d.txt",
       "hash": "457090460225ee84ddb27a46e74530078f00741067dcf51fb5f3cec443b29d31",
       "title": "Reset 3D settings to 4.5 default settings",

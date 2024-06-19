@@ -1,0 +1,86 @@
+#$ TITLE: Dash standard features
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: EXPERIMENTAL
+#$ AUTHOR: Eric Aschner
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: Standard features for personal quads
+
+#$ INCLUDE: presets/4.5/rates/dash_rates.txt
+
+# -- Craft --
+set pilot_name = Rainbow Dash
+set vtx_low_power_disarm = ON
+
+# -- Save CPU cycles --
+set acc_hardware = NONE
+set baro_hardware = NONE
+set blackbox_device = NONE
+feature -TELEMETRY
+
+# -- Turn off beeper bs --
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -BAT_CRIT_LOW
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -RX_SET
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# -- Bindings and modes --
+map TAER1234
+aux 0 0 0 1700 2100 0 0
+aux 1 1 2 1700 2100 0 0
+aux 2 2 2 1300 1700 0 0
+aux 3 13 1 1800 2100 0 0
+aux 4 35 1 1300 1700 0 0
+adjrange 0 0 3 900 2100 12 3 0 0
+
+#$ OPTION_GROUP BEGIN: Camera type OSD
+   #$ OPTION BEGIN (CHECKED): Analog OSD
+      set osd_units = IMPERIAL
+      set osd_logo_on_arming = ON
+      set osd_logo_on_arming_duration = 15
+      set osd_tim2 = 1
+      set osd_vbat_pos = 260
+      set osd_rssi_pos = 195
+      set osd_link_quality_pos = 14391
+      set osd_rssi_dbm_pos = 14424
+      set osd_tim_1_pos = 393
+      set osd_tim_2_pos = 14729
+      set osd_flymode_pos = 33
+      set osd_throttle_pos = 278
+      set osd_vtx_channel_pos = 14401
+      set osd_crosshairs_pos = 14573
+      set osd_current_pos = 14736
+      set osd_mah_drawn_pos = 14744
+      set osd_craft_name_pos = 14382
+      set osd_pilot_name_pos = 14369
+      set osd_altitude_pos = 33
+      set osd_warnings_pos = 14697
+      set osd_avg_cell_voltage_pos = 14721
+      set osd_battery_usage_pos = 33002
+      set osd_disarmed_pos = 14666
+      set osd_canvas_width = 30
+      set osd_canvas_height = 13
+   #$ OPTION END
+   #$ OPTION BEGIN (UNCHECKED): HDZero OSD
+   #$ OPTION END
+#$ OPTION_GROUP END
