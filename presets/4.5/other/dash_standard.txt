@@ -13,6 +13,8 @@
 # -- Craft --
 set pilot_name = Rainbow Dash
 set vtx_low_power_disarm = ON
+set vtx_band = 5
+set vtx_power = 1
 set yaw_motors_reversed = ON
 set failsafe_delay = 10
 set report_cell_voltage = ON
@@ -103,6 +105,7 @@ adjrange 0 0 3 900 2100 12 3 0 0
       set osd_avg_cell_voltage_pos = 14785
       set osd_battery_usage_pos = 33002
       set osd_disarmed_pos = 14666
+      set vcd_video_system = PAL
    #$ OPTION END
    #$ OPTION BEGIN (UNCHECKED): HDZero OSD
       set osd_units = IMPERIAL
