@@ -14,6 +14,7 @@
 set pilot_name = Rainbow Dash
 set vtx_low_power_disarm = ON
 set vtx_band = 5
+set vtx_channel = 1
 set vtx_power = 1
 set yaw_motors_reversed = ON
 set failsafe_delay = 10
