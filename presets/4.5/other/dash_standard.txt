@@ -19,6 +19,8 @@ set vtx_power = 1
 set yaw_motors_reversed = ON
 set failsafe_delay = 10
 set report_cell_voltage = ON
+feature -RSSI_ADC
+set rssi_channel = 0
 
 # -- Turn off beeper bs --
 beeper -GYRO_CALIBRATED
